@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #fff;
+  font-family: "Fira sans", sans-serif;
+}
+
+nav {
+  background-color: #032541;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  min-height: 70px;
+  padding: 0 2rem;
+}
+
+.logo {
+  text-decoration: none;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: #fff;
+  list-style: none;
+}
+
+ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.logo img {
+  width: 150px !important;
+  margin-right: 2rem;
+}
+
+section {
+  display: grid;
+  grid-template-columns: 270px 1fr;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+aside {
+  min-height: 50vh;
+}
+
+main {
+  min-height: 50vh;
+}
+
+aside h2 {
+  margin-bottom: 2rem;
+}
+
+.filter {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  padding: 20px;
+  margin-bottom: 1rem;
+  border-radius: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+form input {
+  border: none;
+  outline: none;
+  padding: 15px 20px;
+  border-radius: 50px;
+  background: #ececec;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+main form {
+  display: none;
+}
+
+#movies {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  margin-top: 2rem;
+  width: 100%;
+}
+
+main .card {
+  border-radius: 7px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  overflow: hidden;
+}
+
+.card h4 {
+  padding: 5px 10px;
+}
+
+.card p {
+  color: gray;
+  padding: 5px 10px;
+  margin-bottom: 5px;
+}
+.card img {
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 750px) {
+  main {
+    margin-top: 0;
+    padding: 0 !important;
+  }
+
+  section {
+    padding: 1rem 2rem;
+  }
+
+  form {
+    margin-top: 0;
+  }
+
+  main form {
+    display: block;
+  }
+  section {
+    grid-template-columns: 1fr;
+  }
+  aside {
+    display: none;
+  }
+  #movies {
+    grid-template-columns: 1fr 1fr;
+  }
+  ul {
+    display: none;
+  }
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <a target="_blank" href="https://www.themoviedb.org/" class="logo">
+            <img src="./images/logo.svg" class="logo-img" alt="">
+        </a>
+        <ul>
+            <li><a href="#">Movies</a></li>
+            <li><a href="#">TV Shows</a></li>
+            <li><a href="#">People</a></li>
+            <li><a href="#">More</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <aside>
+            <h2>Popular Movies</h2>
+            <div class="filter">
+                <h4>Name</h4>
+                <div>&#8594</div>
+            </div>
+            <div class="filter">
+                <h4>Filters</h4>
+                <div>&#8594</div>
+            </div>
+            <div class="filter">
+                <h4>Where To Watch</h4>
+                <div>&#8594</div>
+            </div>
+            <form>
+                <input type="text" placeholder="Search" class="search" autocomplete="off">
+            </form>
+        </aside>
+        <main>
+            <form>
+                <input type="text" placeholder="Search" class="search" autocomplete="off">
+            </form>
+            <div id="movies"></div>
+        </main>
+    </section>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
